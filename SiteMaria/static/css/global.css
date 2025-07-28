@@ -1,0 +1,121 @@
+
+
+.navigation {
+  box-sizing: border-box;
+  background-color: #3587A4;
+  overflow: auto;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  color: black;
+  display: inline-block;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px 18px 10px 18px;
+  text-transform: uppercase;
+}
+
+
+li:hover {
+    color: lightcoral;
+}
+
+.circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: white; /* Cor do círculo */
+    border-radius: 50%; /* Torna o div um círculo */
+    z-index: 0;
+}
+
+.circle-image {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Opcional: se quiser imagem redonda */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.active {
+  color: lightcoral;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.textHome {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #008CBA;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid #bc8741;
+  padding-left: 0px;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6f4f3;
+}
